@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Chancery Cursive';
-  src: url('/fonts/chancur.ttf') format('truetype');
+  src: url('/fonts/chancur[1].ttf') format('truetype');
 }
 body, h1, p {
   font-family: 'Chancery Cursive', 'Dancing Script', Arial, sans-serif;
