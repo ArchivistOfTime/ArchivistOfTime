@@ -8,7 +8,13 @@
     body {
       background-color: #1a1a1a;
       color: #f0f0f0;
-      font-family: 'Chancery Cursive', cursive;
+      @font-face {
+      font-family: 'Chancery Cursive';
+      src: url('/fonts/chancur[1].ttf') format('truetype');
+    }
+    body, h1, p {
+      font-family: 'Chancery Cursive', 'Dancing Script', Arial, sans-serif;
+    }
       margin: 0;
       padding: 0;
     }
