@@ -1,1 +1,8 @@
 
+@font-face {
+    font-family: 'Chancery Cursive';
+    src: url('/css/fonts/chancur[1].ttf') format('truetype');
+}
+body {
+    font-family: 'Chancery Cursive', cursive;
+}
