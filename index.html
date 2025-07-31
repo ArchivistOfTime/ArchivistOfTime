@@ -2,71 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Archivist of Time</title>
+  <title>Archivist of Time – Timeline</title>
   <style>
     body {
-      background-color: #1e1e1e;
-      color: #e0e0e0;
+      background-color: #1a1a1a;
+      color: #f0f0f0;
       font-family: 'Georgia', serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
+      margin: 0;
+      padding: 0;
     }
-    h1, h2 {
-      color: #ffd700;
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #111;
+      color: #c28840;
     }
-    a {
+
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
       color: #87cefa;
+      margin: 0 1rem;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 1rem;
     }
-    nav {
+
+    .entry {
+      position: relative;
+      border-left: 4px solid #c28840;
+      padding-left: 1.5rem;
       margin-bottom: 2rem;
     }
-    nav a {
-      margin-right: 1rem;
-      font-weight: bold;
+
+    .entry::before {
+      content: "⏳";
+      position: absolute;
+      left: -1.4rem;
+      top: 0;
+      background: #1a1a1a;
+      color: #c28840;
+      font-size: 1.2rem;
     }
-    .post {
-      border-bottom: 1px solid #444;
-      padding-bottom: 1rem;
-      margin-bottom: 2rem;
+
+    .entry h2 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #c28840;
     }
+
+    .entry .date {
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .entry p {
+      margin-top: 0.5rem;
+    }
+
     footer {
       text-align: center;
       font-size: 0.9rem;
-      color: #888;
-      margin-top: 3rem;
+      color: #666;
+      padding: 2rem 1rem;
     }
   </style>
 </head>
 <body>
-  <h1>🕰️ Archivist of Time</h1>
-  <p>Sharing bite-sized facts and long-lost fragments from ancient Israel and beyond.</p>
+  <header>
+    <h1>Archivist of Time</h1>
+    <p>Historical facts from ancient Israel and the surrounding world</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="https://x.com/ArchivistOfTime" target="_blank">X (Twitter)</a>
+    </nav>
+  </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="https://x.com/ArchivistOfTime" target="_blank">X (Twitter)</a>
-  </nav>
+  <div class="timeline">
+    <div class="entry">
+      <h2>The Merneptah Stele</h2>
+      <div class="date">c. 1208 BCE</div>
+      <p>The first known mention of “Israel” is found on an Egyptian victory monument by Pharaoh Merneptah. It declares: “Israel is laid waste, its seed is no more.”</p>
+    </div>
 
-  <div class="post">
-    <h2>📜 Fact #1 – The First Mention of Israel</h2>
-    <p><strong>Date:</strong> 1208 BCE</p>
-    <p>The earliest known reference to "Israel" appears not in the Bible, but in the <em>Merneptah Stele</em> — an Egyptian victory inscription boasting of a campaign in Canaan. It declares, “Israel is laid waste, its seed is no more.” A tiny line, but a massive window into history.</p>
-  </div>
+    <div class="entry">
+      <h2>Ashkelon and the Philistines</h2>
+      <div class="date">c. 1150 BCE</div>
+      <p>Excavations at Ashkelon reveal European ancestry among the Philistines, suggesting a migration from the Aegean world into the Levant during the Late Bronze Age collapse.</p>
+    </div>
 
-  <div class="post">
-    <h2>⛏️ Fact #2 – Ashkelon and the Philistines</h2>
-    <p><strong>Date:</strong> c. 12th century BCE</p>
-    <p>Ashkelon, one of the five Philistine cities, was a coastal powerhouse. Recent excavations revealed Philistine DNA matched European ancestry — supporting the theory that they migrated by sea, possibly from the Aegean world.</p>
+    <div class="entry">
+      <h2>The House of David Inscription</h2>
+      <div class="date">c. 840 BCE</div>
+      <p>The Tel Dan Stele, discovered in northern Israel, references the “House of David,” offering archaeological support for the historical King David mentioned in the Bible.</p>
+    </div>
   </div>
 
   <footer>
-    &copy; 2025 Archivist of Time. All facts sourced with care.
+    &copy; 2025 Archivist of Time. Curated with historical integrity and poetic curiosity.
   </footer>
 </body>
 </html>
+
